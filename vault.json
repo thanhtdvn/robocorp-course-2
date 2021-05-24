@@ -1,0 +1,7 @@
+{
+    "SETTINGS": {
+        "ORDER_PAGE_URL": "https://robotsparebinindustries.com/#/robot-order",
+        "DOWNLOAD_ORDER_FILE_URL": "https://robotsparebinindustries.com/orders.csv",
+        "MAX_TRIED_COUNTS": 3
+    }
+}
