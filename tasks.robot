@@ -132,7 +132,7 @@ Go To Order Another Robot
 
 *** Keywords ***
 Create A Zip File Of The Receipts
-    Archive Folder With Zip    ${ORDERED_ROBOTS_FOLDER}    ordered_orders.zip
+    Archive Folder With Zip    ${ORDERED_ROBOTS_FOLDER}    ${OUTPUT_DIR}${/}ordered_orders.zip
 
 *** Keywords ***
 Confirmation Running Mode Dialog
@@ -173,4 +173,5 @@ Order robots from RobotSpareBin Industries Inc
         Sleep    10s
     END
     Create A Zip File Of The Receipts
+    [Teardown]    RPA.Browser.Close Browser
     
