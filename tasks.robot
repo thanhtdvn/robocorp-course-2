@@ -71,7 +71,7 @@ Build A Robot
     
 *** Keywords ***
 Open The Robot Order Website
-    New Browser    headless=false
+    New Browser    headless=true
     New Page    ${ORDER_PAGE_URL}
 
 *** Keywords ***
@@ -152,7 +152,7 @@ Confirmation Running Mode Dialog
 *** Tasks ***
 Order robots from RobotSpareBin Industries Inc
     Initialize
-    Confirmation Running Mode Dialog
+    #Confirmation Running Mode Dialog
     Open The Robot Order Website
     @{orders}=    Get Orders
     @{failed_orders}=    Create List
